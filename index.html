@@ -5,74 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>InboxZero Audits – $79 Email Deliverability Audit for B2B SaaS</title>
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0; color: #111827; background: #f9fafb; }
-    .page { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
-    h1 { font-size: 2.25rem; margin-bottom: 0.75rem; }
-    h2 { font-size: 1.25rem; margin-top: 2rem; margin-bottom: 0.5rem; }
-    p { line-height: 1.6; margin: 0.35rem 0; }
-    .badge { display: inline-block; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; background: #e5f3ff; color: #1d4ed8; padding: 0.25rem 0.5rem; border-radius: 999px; margin-bottom: 1rem; }
-    .hero { margin-bottom: 2rem; }
-    .highlight { background: #fef3c7; padding: 0.1rem 0.25rem; border-radius: 0.25rem; }
-    .pill { display: inline-block; background: white; border-radius: 999px; padding: 0.35rem 0.75rem; border: 1px solid #e5e7eb; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.5rem; }
-    .card { background: white; border-radius: 0.75rem; padding: 1.25rem 1.5rem; border: 1px solid #e5e7eb; margin-top: 1.25rem; }
-    .price { font-size: 1.75rem; font-weight: 600; }
-    .muted { color: #6b7280; }
-    ul { padding-left: 1.2rem; }
-    li { margin: 0.25rem 0; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; padding: 0; color: #111827; background: #f9fafb; }
+    header { background: #111827; color: white; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+    header .logo { font-weight: 600; letter-spacing: 0.03em; }
+    header .tagline { font-size: 0.9rem; opacity: 0.8; }
+    main { max-width: 960px; margin: 2.5rem auto 3rem; padding: 0 1.5rem; }
+    .hero-eyebrow { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6366f1; font-weight: 600; margin-bottom: 0.5rem; }
+    h1 { font-size: clamp(2rem, 3vw, 2.6rem); margin: 0 0 0.75rem; color: #0f172a; }
+    .hero-subtitle { font-size: 1.05rem; color: #4b5563; max-width: 40rem; margin-bottom: 1.5rem; }
+    .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-bottom: 2rem; }
+    .btn-primary { display: inline-flex; align-items: center; justify-content: center; padding: 0.9rem 1.8rem; border-radius: 999px; background: #4f46e5; color: #fff; text-decoration: none; font-weight: 600; font-size: 0.98rem; box-shadow: 0 10px 15px -3px rgba(15,23,42,0.25); transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.1s ease; }
+    .btn-primary:hover { background: #4338ca; transform: translateY(-1px); box-shadow: 0 18px 25px -8px rgba(15,23,42,0.35); }
+    .price-chip { font-size: 0.9rem; color: #4b5563; }
+    .price-chip strong { color: #111827; }
+    .layout { display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.9fr); gap: 2.5rem; margin-top: 1.5rem; }
+    @media (max-width: 768px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+    h2 { font-size: 1.3rem; margin-top: 0; margin-bottom: 0.75rem; color: #111827; }
+    p { color: #4b5563; line-height: 1.6; margin-top: 0; margin-bottom: 0.75rem; }
+    ul { padding-left: 1.1rem; margin: 0.25rem 0 0.75rem; }
+    li { margin-bottom: 0.4rem; color: #4b5563; }
+    .card { background: white; border-radius: 0.75rem; border: 1px solid #e5e7eb; padding: 1.25rem 1.4rem; box-shadow: 0 10px 25px -12px rgba(15,23,42,0.12); }
+    .muted { font-size: 0.88rem; color: #6b7280; }
+    footer { max-width: 960px; margin: 0 auto 2rem; padding: 0 1.5rem; font-size: 0.8rem; color: #9ca3af; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+    .badge { border-radius: 999px; background: #e5e7eb; color: #4b5563; padding: 0.15rem 0.65rem; font-size: 0.78rem; }
   </style>
 </head>
 <body>
-  <main class="page">
-    <div class="hero">
-      <div class="badge">InboxZero Audits</div>
-      <h1>$79 email deliverability audit for B2B SaaS founders</h1>
-      <p>Get an independent, one-time audit of how your product emails, lifecycle sequences, and outbound land in the inbox – with specific, prioritized fixes you can hand to your team.</p>
-    </div>
-
+  <header>
+    <div class="logo">InboxZero Audits</div>
+    <div class="tagline">$79 email deliverability audit for B2B SaaS</div>
+  </header>
+  <main>
     <section>
-      <h2>Who this is for</h2>
-      <p>InboxZero Audits are built for <span class="highlight">B2B SaaS founders and revenue leaders</span> who:</p>
-      <ul>
-        <li>Depend on product, onboarding, and lifecycle emails for activation and expansion</li>
-        <li>Send sales or outbound campaigns from tools like Outreach, Salesloft, or HubSpot</li>
-        <li>Suspect important emails are quietly going to spam or promotions</li>
-      </ul>
-      <div>
-        <span class="pill">B2B SaaS</span>
-        <span class="pill">Founders & GTM leaders</span>
-        <span class="pill">Email & lifecycle</span>
+      <div class="hero-eyebrow">Email deliverability, de-mystified</div>
+      <h1>Get a clear, actionable deliverability audit in 3 business days.</h1>
+      <p class="hero-subtitle">InboxZero Audits reviews your domains, authentication, reputation, and recent sending so your B2B SaaS emails land in the inbox more reliably. One fixed-price audit, delivered as a focused PDF report you can act on immediately.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="https://emi-demo.example/pay/plink_000001">Get your $79 deliverability audit</a>
+        <div class="price-chip"><strong>$79 one-time</strong> · PDF report in 3 business days</div>
       </div>
     </section>
-
-    <section class="card">
-      <h2>What you get for $79</h2>
-      <p class="price">$79 <span class="muted">one-time audit</span></p>
+    <section class="layout">
+      <div>
+        <h2>What you get</h2>
+        <p>You will receive a concise PDF (usually 8–15 pages) that covers:</p>
+        <ul>
+          <li>Your current authentication setup (SPF, DKIM, DMARC) and gaps to fix</li>
+          <li>Sending domains and configuration issues that may hurt inbox placement</li>
+          <li>List quality and engagement signals that ESPs and ISPs watch</li>
+          <li>Recent performance: bounces, spam complaints, opens, and trends</li>
+          <li>Blocklist/reputation risk and how to reduce it over the next 30–60 days</li>
+          <li>A prioritized, step-by-step action plan tailored to your stack</li>
+        </ul>
+        <p class="muted">Designed for B2B SaaS founders and teams who want a second set of eyes on their setup without hiring a long-term consultant.</p>
+      </div>
+      <div class="card">
+        <h2>How it works</h2>
+        <ol>
+          <li><strong>Pay $79 securely.</strong> Use the button above to purchase your InboxZero Audit.</li>
+          <li><strong>Complete a short intake.</strong> You will get an email with a few questions about your domains, sending tools, and goals.</li>
+          <li><strong>We run the audit.</strong> Using your answers (and any exports/screenshots you share), we review your setup and recent sending.</li>
+          <li><strong>Get your PDF report.</strong> Within 3 business days of intake, you will receive a clear, prioritized set of recommendations.</li>
+        </ol>
+        <p class="muted">You keep full control of your DNS and ESP accounts – we only work from the information you provide and any optional read-only access you grant.</p>
+      </div>
+    </section>
+    <section style="margin-top: 2rem;">
+      <h2>Is this a fit for you?</h2>
+      <p>InboxZero Audits is built for B2B SaaS teams who:</p>
       <ul>
-        <li>A one-time <strong>email deliverability and configuration review</strong> (SPF, DKIM, DMARC basics, sending domains)</li>
-        <li>Sample tests of your key flows (product, lifecycle, or outbound) across common inboxes</li>
-        <li>A <strong>PDF report</strong> delivered within <strong>3 business days</strong> summarizing findings</li>
-        <li><strong>Prioritized recommendations</strong> your team (or existing agency) can implement</li>
-        <li>Simple tracking so you know what changed and why it matters</li>
+        <li>Rely on product, onboarding, or lifecycle emails for activation and retention</li>
+        <li>Send from one or more custom domains (not just "no-reply@gmail.com")</li>
+        <li>Suspect deliverability issues but do not have time to go deep on the details</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>How it works</h2>
-      <ol>
-        <li><strong>Pay $79</strong> via a secure checkout link (sent directly to you).</li>
-        <li>Complete a short <strong>intake questionnaire</strong> about your domains, tools, and key flows.</li>
-        <li>InboxZero completes your audit within <strong>3 business days</strong>.</li>
-        <li>You receive a <strong>PDF report</strong> with findings and concrete recommendations.</li>
-      </ol>
-      <p class="muted" style="margin-top:0.75rem;">Note: InboxZero Audits are a one-time audit only – no long-term contract or retainer.</p>
-    </section>
-
-    <section>
-      <h2>How to book your audit</h2>
-      <p>Right now, InboxZero Audits are offered to a small set of B2B SaaS founders via direct invite.</p>
-      <p>If you received an invitation email, simply use the <strong>secure $79 payment link</strong> in that email to confirm your audit. You&apos;ll be taken straight to checkout and then to the intake form.</p>
-      <p class="muted">Public self-serve booking (with a checkout link on this page) is coming soon.</p>
+      <div class="badge-row">
+        <div class="badge">B2B SaaS founders &amp; early teams</div>
+        <div class="badge">Product &amp; growth leads</div>
+        <div class="badge">Email / lifecycle marketers</div>
+      </div>
     </section>
   </main>
+  <footer>
+    <div>InboxZero Audits · Email deliverability audits for B2B SaaS · $79 one-time</div>
+  </footer>
 </body>
 </html>
